@@ -13,7 +13,13 @@ db = mongo_client['alaram']
 collection = db['schedules']
 
 def Alarm():
-    a = input("Enter 1 for set the schedules | 2 for list of schedules | 3 for total list of schedules | 4 for Help guide: ")
+    print("""
+          1.set the schedules
+          2.list of schedules
+          3.total numbers of schedules
+          4.Help guide
+          """)
+    a = input("Enter the Number: ")
     if a == "":
          print("Enter the Number!")
     if a == "2":
